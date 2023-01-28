@@ -1,0 +1,55 @@
+html * {
+	font-family: Monospace, sans-serif;!important;
+}
+
+h1, h3{
+text-align: center;	
+}
+
+/* general */
+.section {
+	padding: 1% 10%;
+	margin-bottom: 0;
+}
+
+.section:before {
+	background: rgba(6, 12, 34, 0.8);
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+/*-------------------------------------------------------------- # Air Section --------------------------------------------------------------*/
+#air {
+	padding: 1% 0;
+}
+
+form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 0% 30%;
+}
+
+/* set grid layout for images */
+#grid {
+	display: grid;
+	grid-gap: 2em;
+}
+
+ @media (max-width: 700px) {
+    .section {
+         padding: 2% 5%;
+    }
+     #air {
+         padding: 2% 0;
+    }
+	form {
+		flex-wrap: nowrap;
+		flex-direction: column;
+		padding: 0%;
+	}
+}
